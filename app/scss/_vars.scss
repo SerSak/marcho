@@ -1,0 +1,26 @@
+$accent: #fe3e57;
+$default: #8d8d8d;
+$title: #29282d;
+
+
+
+// EXTEND INHERITANCE
+%q400 {
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%q500 {
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-weight: 500;
+}
+
+%r400 {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%r700 {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+}

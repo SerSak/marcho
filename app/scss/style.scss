@@ -5,9 +5,74 @@
 
 
 
+.header {
+    padding: 40px 0;
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+    }
+}
 
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__list-item+&__list-item {
+        padding-left: 35px;
+    }
+
+    &__list-link {
+        @extend %r400;
+        text-transform: uppercase;
+        color: $title;
+        padding-bottom: 7px;
+        transition: all 0.3s linear;
+
+        &:hover {
+            color: $accent;
+            border-bottom: 1px solid $accent;
+            @extend %r700;
+        }
+    }
+
+    &__list-link--active {
+        color: $accent;
+        border-bottom: 1px solid $accent;
+        @extend %r700;
+    }
+}
+
+.user-nav {
+    display: flex;
+
+    &__link {
+        position: relative;
+    }
+
+    &__link+&__link {
+        padding-left: 25px;
+    }
+
+    &__num {
+        position: absolute;
+        right: -12px;
+        top: -9px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        font-size: 12px;
+        background-color: $accent;
+        color: #fff;
+
+        // CENTERS THE TEXT INSIDE THE CIRCLE
+        text-align: center;
+        line-height: 20px;
+    }
+}
 
 
 
