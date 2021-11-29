@@ -2,7 +2,7 @@ $accent: #fe3e57;
 $default: #8d8d8d;
 $title: #29282d;
 
-
+$bg: #f6f6f6;
 
 // EXTEND INHERITANCE
 %q400 {
@@ -11,7 +11,7 @@ $title: #29282d;
 }
 
 %q500 {
-    font-family: 'Quicksand-Regular', sans-serif;
+    font-family: 'Quicksand-Medium', sans-serif;
     font-weight: 500;
 }
 

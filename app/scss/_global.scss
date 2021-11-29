@@ -1,12 +1,29 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @extend %q500;
+    font-size: 16px;
+    color: $default;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex-grow: 1;
+}
+
 .container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-body {
+a {
     @extend %q500;
     font-size: 16px;
-    // line-height: 26px;
     color: $default;
 }
