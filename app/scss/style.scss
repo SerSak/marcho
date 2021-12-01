@@ -29,7 +29,8 @@
         @extend %r400;
         text-transform: uppercase;
         color: $title;
-        padding-bottom: 7px;
+        padding: 0 2px 7px;
+        // padding-bottom: 7px;
         transition: all 0.3s linear;
 
         &:hover {
@@ -73,6 +74,13 @@
         line-height: 20px;
     }
 }
+
+
+// =========== HERO ===========
+
+
+
+
 
 
 // =========== FOOTER ===========
