@@ -1,7 +1,10 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
+
+
 
 
 // =========== HEADER ===========
@@ -76,10 +79,98 @@
 }
 
 
+
 // =========== HERO ===========
+.top-slider {
+    padding-top: 65px 0 45px;
+    background-color: $bg;
+    background-image: url('../images/shapes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
 
+    &__container {
+        max-width: 1560px;
+    }
 
+    &__item {
+        display: flex !important;
+        justify-content: space-between;
+    }
 
+    &__content {
+        padding-left: 175px;
+        padding-top: 125px;
+    }
+
+    &__title {
+        @extend %r700;
+        color: $title;
+        max-width: 670px;
+        font-size: 58px;
+        line-height: 68px;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        max-width: 470px;
+        line-height: 26px;
+        margin-bottom: 50px;
+    }
+
+    &__link {
+        @extend %btn;
+        padding: 14px 36px;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+
+        li {
+            padding: 0 5px;
+            line-height: 0;
+
+            button {
+                position: relative;
+                padding: 0;
+                font-size: 0;
+                background-color: transparent;
+                width: 26px;
+                height: 26px;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    background-color: $default;
+                    border-radius: 50%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            &.slick-active {
+
+                button {
+                    border-color: $accent;
+
+                    &::before {
+                        background-color: $accent;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
 
@@ -181,15 +272,8 @@
     }
 
     &__form-btn {
-        background-color: $accent;
-        color: #fff;
-        text-transform: uppercase;
-        @extend %r400;
+        @extend %btn;
         border: none;
-        line-height: 26px;
-        padding: 11px 26px;
-        cursor: pointer;
-        box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
     }
 
 }

@@ -4,6 +4,9 @@ $title: #29282d;
 
 $bg: #f6f6f6;
 
+
+
+
 // EXTEND INHERITANCE
 %q400 {
     font-family: 'Quicksand', sans-serif;
@@ -23,4 +26,19 @@ $bg: #f6f6f6;
 %r700 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+}
+
+
+// ELEMENTS
+
+%btn {
+    @extend %r400;
+    display: inline-block;
+    background-color: $accent;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 26px;
+    padding: 12px 26px;
+    cursor: pointer;
+    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
 }
