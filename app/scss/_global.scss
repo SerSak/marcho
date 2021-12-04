@@ -5,14 +5,14 @@ body {
 
 body {
     @extend %q500;
-    font-size: 16px;
     color: $default;
-
+    font-size: 16px;
+    line-height: 26px;
     display: flex;
     flex-direction: column;
 }
 
-.main{
+.main {
     flex-grow: 1;
 }
 
@@ -23,7 +23,26 @@ body {
 }
 
 a {
+    display: block;
     @extend %q500;
     font-size: 16px;
     color: $default;
+}
+
+.title {
+    @extend %r700;
+    color: $title;
+    font-size: 48px;
+    line-height: 65px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text {
+    max-width: 570px;
+    margin: 0 auto 55px;
+    @extend %q500;
+    color: #8d8d8d;
+    line-height: 26px;
+    text-align: center;
 }
