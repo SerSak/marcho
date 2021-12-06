@@ -7,5 +7,12 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000,
     });
-    
+
+    $('.star').rateYo({
+        starWidth: "20px",
+        normalFill: "#ccccce",
+        ratedFill: "#ffc35b",
+        readOnly: true,
+    });
+
 });

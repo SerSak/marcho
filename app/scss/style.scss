@@ -505,6 +505,141 @@
 
 
 
+// =========== PRODUCT ===========
+.product {
+    padding: 100px 0 120px;
+    text-align: center;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 45px 30px;
+    }
+
+    &__link {
+        @extend %r400;
+        color: $title;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 1px solid $accent;
+        padding: 14px 27px;
+        margin-top: 50px;
+    }
+}
+
+.product-item {
+    max-width: 370px;
+    text-align: center;
+
+    &__images {
+        object-fit: cover;
+    }
+
+    &__img-box {
+        position: relative;
+        height: 370px;
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+
+    &__link-box {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #fff;
+        text-align: center;
+        width: 220px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 25px;
+
+        transition: all 0.3s ease;
+        transform: translateY(300%);
+    }
+
+    &__link--line::before,
+    &__link--line::after {
+        position: absolute;
+        content: '';
+        height: 30px;
+        width: 1px;
+        background-color: #ececec;
+        top: 10px;
+    }
+
+    &__link--line::before {
+        left: 70px;
+    }
+
+    &__link--line::after {
+        right: 70px;
+    }
+
+    &__link {
+        display: inherit;
+    }
+
+    &__link:hover path {
+        transition: all 0.3s ease;
+        fill: $accent;
+    }
+
+    &__title {
+        @extend %r400;
+        color: $title;
+        font-size: 22px;
+        text-transform: capitalize;
+        margin: 15px 0;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__new-price {
+        @extend %r500;
+        color: $title;
+        padding: 0 12px;
+    }
+
+    &__old-price {
+        @extend %r400;
+        padding: 0 12px;
+        color: #ccccce;
+        text-decoration: line-through;
+    }
+
+    &:hover {
+        .product-item__link-box {
+            transform: translateY(0);
+        }
+    }
+
+    &--sale {
+
+        .product-item__img-box::before {
+            position: absolute;
+            content: 'SALE';
+            top: 25px;
+            left: 25px;
+            @extend %btn;
+            line-height: 1;
+        }
+
+    }
+}
+
+.star{
+    margin: 0 auto;
+}
+
 
 
 

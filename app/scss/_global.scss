@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    display: block;
+    display: inline-block;
     @extend %q500;
     font-size: 16px;
     color: $default;
