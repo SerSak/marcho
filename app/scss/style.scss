@@ -632,13 +632,100 @@
             @extend %btn;
             line-height: 1;
         }
-
     }
 }
 
-.star{
+.star {
     margin: 0 auto;
 }
+
+// =========== PROMO ===========
+.promo {
+    background-image: url('../images/content/deals/1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f6f6f6;
+    padding: 150px 0 160px;
+    text-align: center;
+
+    &__inner {
+        max-width: 570px;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    &__suptitle {
+        @extend %q500;
+        color: $accent;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 45px;
+    }
+
+
+    &__timer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__timer-item {
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 40px 0px rgba(187, 187, 187, 0.3);
+        width: 120px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            @extend %r700;
+            color: $title;
+            font-size: 48px;
+            line-height: 1;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    &__link {
+        @extend %r400;
+        color: $title;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 1px solid $accent;
+        padding: 14px 27px;
+        margin-top: 55px;
+    }
+}
+
+
+.partners {
+    padding-top: 75px;
+
+    &__list {
+        height: 170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
 
 
 
