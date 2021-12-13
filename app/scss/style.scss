@@ -213,6 +213,32 @@
 }
 
 
+// =========== TOP ===========
+
+.top {
+
+    &__container {
+        max-width: 1700px;
+        margin: 0 auto;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        padding: 120px 0 130px;
+    }
+
+
+    &__title {
+        @extend %r400;
+        text-transform: uppercase;
+        font-size: 48px;
+        color: $title;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+}
+
 
 // =========== HERO ===========
 .top-slider {
@@ -833,19 +859,67 @@
         background-image: url('../images/icons/arrowgrey.svg');
     }
 
-
-
-
-
-
-
-
-
-
 }
 
 
 
+// =========== LOG IN ===========
+.modal {
+    max-width: 570px;
+    padding-top: 100px;
+    margin: 0 auto 115px;
+
+    &__links {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__link {
+        @extend %r400;
+        text-transform: uppercase;
+        font-size: 22px;
+        color: #909090;
+        margin: 0 30px;
+    }
+
+    &__link--active {
+        @extend %r700;
+        color: $accent;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #f6f6f6;
+        margin-top: 4px;
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        @extend %r400;
+        border: none;
+        padding: 14px 0;
+        background-color: $title;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &__restore {
+        margin-top: 15px;
+        color: $accent;
+    }
+
+}
 
 
 
